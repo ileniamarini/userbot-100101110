@@ -27,7 +27,5 @@ async def amireallyalive(alive):
                      f"**> Telethon:** {version.__version__}\n"
                      f"**> Python:** {versions.__python_version__}\n"
                      f"**> Firmware:** {versions.__version__}\n"
-                     f"**> Licenza:** {versions.__license__}\n"
-                     f"**> Copyright:** {versions.__copyright__}\n"
                      f"**> 👤 USER**: {DEFAULTUSER}\n\n"
                      "▬▬▬▬▬▬▬▬ ❴✪❵ ▬▬▬▬▬▬▬▬")
