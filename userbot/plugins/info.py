@@ -242,17 +242,17 @@ async def _(event):
     except Exception as e:
         dc_id = "Need a Profile Picture to check **this**"
         location = str(e)
-    caption = """⚙️ DATABASE USERBOT-100101110
+    caption = """⚙️ INFORMAZIONI SU QUESTO USER
     
-ID: <code>{}</code>
-NOME: <a href='tg://user?id={}'>{}</a>
-BIO: {}
-DC ID: {}
-PIC PROFILO: {}
-LIMITATO: {}
-VERIFICATO: {}
-BOT: {}
-GRUPPI IN COMUNE: {}
+🆔ID🆔: <code>{}</code>
+🔲NOME🔲: <a href='tg://user?id={}'>{}</a>
+💠BIO💠: {}
+💢DC ID💢: {}
+🖼PIC PROFILO🖼: {}
+❌⚠️LIMITATO⚠️❌: {}
+☑️VERIFICATO☑️: {}
+⚙️BOT⚙️: {}
+GRUPPI IN COMUNE📶: {}
 """.format(
         user_id,
         user_id,
