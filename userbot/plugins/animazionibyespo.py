@@ -1,6 +1,6 @@
 """Commands:
 .espo
-.@bl
+.bl
 .a
 .vaffanculo
 .meme
@@ -38,8 +38,8 @@ async def espo(event):
     await asyncio.sleep(2)
 
 
-@bot.on(dev_cmd(pattern=f"@bl"))
-async def @bl(event):
+@bot.on(dev_cmd(pattern=f"bl"))
+async def bl(event):
     if event.fwd_from:
         return 
     await event.edit("Canale Blacklist @ by espo ➡️ @espoblacklist\n")
