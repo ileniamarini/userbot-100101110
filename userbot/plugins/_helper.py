@@ -55,4 +55,3 @@ async def cmd_list(event):
                 hide_via=True
             )
             await event.delete()
-© 2020 GitHub, Inc.
