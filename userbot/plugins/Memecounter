@@ -1,5 +1,5 @@
 """Syntax:
-.memecounter"""
+.cmeme"""
 
 import asyncio
 import os
