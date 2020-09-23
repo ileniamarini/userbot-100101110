@@ -15,7 +15,8 @@
 .hi
 .luck
 .sprinkle
-.ahh"""
+.ahh
+.risata"""
 
 import asyncio
 import os
@@ -75,3 +76,9 @@ async def ahh(event):
     if event.fwd_from:
         return
     await event.edit("ª")
+
+    @bot.on(dev_cmd(pattern=r"risata"))
+async def risata(event):
+    if event.fwd_from:
+        return
+    await event.edit("AHAHAHAHAHAAHAHAHAHAHAHAHAHAHAAHAHAHAHAHAAHAHAHAH")
