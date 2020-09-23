@@ -11,7 +11,7 @@ from userbot import bot
 from userbot.system import dev_cmd
 
 
-@bot.on(dev_cmd(pattern=f"hps", outgoing=True))
+@bot.on(dev_cmd(pattern=f"cmeme", outgoing=True))
 async def _(event):
     if event.fwd_from:
         return
