@@ -15,7 +15,7 @@
 .hi
 .luck
 .sprinkle
-.a"""
+.ahh"""
 
 import asyncio
 import os
@@ -70,8 +70,8 @@ async def sprinkle(event):
         return
     await event.edit("✨.•*¨*.¸.•*¨*.¸¸.•*¨*• ƸӜƷ\n🌸🌺🌸🌺🌸🌺🌸🌺\n Sprinkled with love❤\n🌷🌻🌷🌻🌷🌻🌷🌻\n ¨*.¸.•*¨*. ¸.•*¨*.¸¸.•*¨`*•.✨\n🌹🍀🌹🍀🌹🍀🌹🍀")
 
-@bot.on(dev_cmd(pattern=r"a"))
-async def a(event):
+@bot.on(dev_cmd(pattern=r"ahh"))
+async def ahh(event):
     if event.fwd_from:
         return
     await event.edit("ª")
