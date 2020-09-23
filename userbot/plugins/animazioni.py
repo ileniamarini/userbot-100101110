@@ -219,9 +219,3 @@ async def _(event):
     for i in animation_ttl:
             await asyncio.sleep(animation_interval)
             await event.edit(animation_chars[i % 10])
-
-            @bot.on(dev_cmd(pattern=r"ridi"))
-async def ridi(event):
-    if event.fwd_from:
-        return
-    await event.edit("AHAHAHAHAHAAHAHAHAHAHAHAHAHAHAAHAHAHAHAHAAHAHAHAH")
