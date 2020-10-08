@@ -158,7 +158,7 @@ async def on_afk(event):
         message_to_reply = f"**Sono AFK** `{total_afk_time}`\n**Non scrivere altri messaggi.**" + \
             f"\n\n**Quando torno rispondo.**\n**motivo afk: **: {reason}" \
             if reason \
-            else f"**Al momento non sto usando tg.**\n\n**Appena torno risponderò al tuo messaggio"
+            else f"**Al momento non sto usando tg.**\n\n**Appena torno risponderò al tuo messaggio**"
         msg = await event.reply(message_to_reply)
         await asyncio.sleep(5)
         if event.chat_id in last_afk_message:  # pylint:disable=E0602
