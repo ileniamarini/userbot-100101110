@@ -16,7 +16,7 @@
 .luck
 .sprinkle
 .ahh
-.ridi"""
+.rido"""
 
 import asyncio
 import os
