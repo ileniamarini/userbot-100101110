@@ -107,10 +107,9 @@ I = ("⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿\n"
 "⣿⣿⣿⣿⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣶⣿⣿⣿⣿⣿⣿⣿\n"
 "⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿\n")
 
-n = str(ALIVE_NAME) if ALIVE_NAME else "Set ALIVE_NAME in config vars in Heroku"
-@bot.on(dev_cmd(pattern="sthink (.*)"))
+@bot.on(dev_cmd(pattern=r"sthink"))
 async def kakashi(think):
-    name = think.pattern_match.group(1)
+    await think.edit(F)
     A = (f"**  ➥ {name} .\n\n**"
         "⠀⠀⠀⠀⢀⣀⣀⣀\n"
         "⠀⠀⠀⠰⡿⠿⠛⠛⠻⠿⣷\n"
@@ -130,10 +129,9 @@ async def kakashi(think):
     await think.edit(n + A)
 
 
-n = str(ALIVE_NAME) if ALIVE_NAME else "Set ALIVE_NAME in config vars in Heroku"        
-@bot.on(dev_cmd(pattern="sdick (.*)"))
+@bot.on(dev_cmd(pattern=r"sdick"))
 async def kakashi(dicksay):
-    name = dicksay.pattern_match.group(1)
+    await dicksay.edit(F)
     B = (f"**  ➥ {name} .\n**"
         "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n"
         "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡤⠖⠲⢄\n"
@@ -155,10 +153,9 @@ async def kakashi(dicksay):
     await dicksay.edit(n + B)
 
 
-n = str(ALIVE_NAME) if ALIVE_NAME else "Set ALIVE_NAME in config vars in Heroku"        
-@bot.on(dev_cmd(pattern="sfrog (.*)"))
+@bot.on(dev_cmd(pattern=r"sfrog"))
 async def kakashi(frogsay):
-    name = frogsay.pattern_match.group(1)
+    await frogsay.edit(F)
     C = (f"**  ➥ {name} .\n\n**"
         "⠄⠄⠄⠄⠄⣀⣀⣤⣶⣿⣿⣶⣶⣶⣤⣄⣠⣴⣶⣿⣶⣦⣄⠄\n"
         "⠄⣠⣴⣾⣿⠿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦\n"
@@ -178,9 +175,9 @@ async def kakashi(frogsay):
     await frogsay.edit(n + C)
 
 
-@bot.on(dev_cmd(pattern="sputin (.*)"))
+@bot.on(dev_cmd(pattern=r"sputin"))
 async def kakashi(putinsay):
-    name = putinsay.pattern_match.group(1)
+    await putinsay.edit(F)
     D = (f"**Vladimir Putin ➥ {name} .\n\n**"
         "⣿⣿⣿⣿⣻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿\n"
         "⣿⣿⣿⣵⣿⣿⣿⠿⡟⣛⣧⣿⣯⣿⣝⡻⢿⣿⣿⣿⣿⣿⣿⣿\n"
@@ -202,9 +199,9 @@ async def kakashi(putinsay):
 
 
 
-@bot.on(dev_cmd(pattern="sdead (.*)"))
+@bot.on(dev_cmd(pattern=r"sdead"))
 async def kakashi(deadfrog):
-    name = deadfrog.pattern_match.group(1)
+    await deadfrog.edit(F)
     E = (f"**Froggy ➥ {name} .\n\n**"
         "⣿⣿⣿⡇⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿\n"
         "⣿⣿⣿⡇⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿\n"
@@ -224,9 +221,9 @@ async def kakashi(deadfrog):
     await deadfrog.edit(E)
 
 
-@bot.on(dev_cmd(pattern="strump (.*)"))
+@bot.on(dev_cmd(pattern=r"strump"))
 async def kakashi(trumpsay):
-    name = trumpsay.pattern_match.group(1)
+    await trumpsay.edit(F)
     J = (f"**Donald Trump ➥ {name} .\n\n**"
         "⣿⣿⣿⣿⣿⣿⡿⠿⠛⠋⠉⡉⣉⡛⣛⠿⣿⣿⣿⣿⣿⣿⣿⣿\n"
         "⣿⣿⣿⡿⠋⠁⠄⠄⠄⠄⠄⢀⣸⣿⣿⡿⠿⡯⢙⠿⣿⣿⣿⣿\n"
@@ -246,9 +243,9 @@ async def kakashi(trumpsay):
     await trumpsay.edit(J)
 
 
-@bot.on(dev_cmd(pattern="schina (.*)"))
+@bot.on(dev_cmd(pattern=r"schina"))
 async def kakashi(ckmkb):
-    name = ckmkb.pattern_match.group(1)
+    await ckmkb.edit(F)
     K = (f"**🅲🅺🅼🅺🅱 ➥ {name} .\n\n**"
         "⣿⣿⣿⣿⠟⠋⢁⢁⢁⢁⢁⢁⢁⢁⠈⢻⢿⣿⣿⣿⣿⣿⣿⣿\n"
         "⣿⣿⣿⣿⠃⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠈⡀⠭⢿⣿⣿⣿⣿\n"
