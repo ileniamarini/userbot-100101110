@@ -1,3 +1,5 @@
+#Created by  Md Jisan.  tg @jisan7509
+#adattato a userbot-100101110 da tg @IOOIOIIIO
 
 import asyncio
 from telethon import events
@@ -126,8 +128,8 @@ async def kakashi(think):
         "⠈⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠁\n"
         "⠀⠀⠛⢿⣿⣿⣿⣿⣿⣿⡿⠟\n")
     await think.edit(n + A)
-    
-    
+
+
 n = str(ALIVE_NAME) if ALIVE_NAME else "Set ALIVE_NAME in config vars in Heroku"        
 @bot.on(dev_cmd(pattern="sdick (.*)"))
 async def kakashi(dicksay):
@@ -174,8 +176,8 @@ async def kakashi(frogsay):
         "⠄⣿⠁⠄⠐⠛⠛⠛⠉⠉⠉⠉⠄⠄⣠⣾⣿⣿⣿⣿⣿⣿⣿⣿\n"
         "⠄⠻⣦⣀⣀⣀⣀⣀⣤⣤⣤⣤⣶⣾⣿⣿⣿⣿⣿⣿⣿⣿⡿⠋\n")
     await frogsay.edit(n + C)
-    
-    
+
+
 @bot.on(dev_cmd(pattern="sputin (.*)"))
 async def kakashi(putinsay):
     name = putinsay.pattern_match.group(1)
@@ -220,8 +222,8 @@ async def kakashi(deadfrog):
         "⠄⠄⠄⠄⠄⠄⠄⠁⠙⠒⠙⠯⠍⠙⢉⣡⣶⣿⣿⣿⣿⣿⣿⣿\n"
         "⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠙⣿⣿⣿⣿⣿⣿⣿⣿⣿\n")
     await deadfrog.edit(E)
-    
-  
+
+
 @bot.on(dev_cmd(pattern="strump (.*)"))
 async def kakashi(trumpsay):
     name = trumpsay.pattern_match.group(1)
@@ -265,20 +267,20 @@ async def kakashi(ckmkb):
         "⠄⠄⠄⠄⠄⣿⣿⠃⣦⣄⣿⣿⣿⠇⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄\n"
         "⠄⠄⠄⠄⢸⣿⠗⢈⡶⣷⣿⣿⡏⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄\n")
     await ckmkb.edit(K)
- 
- 
+
+
 @bot.on(dev_cmd(pattern=r"spika"))
 async def kakashi(pikachu):
     await pikachu.edit(F)
-    
+
 @bot.on(dev_cmd(pattern=r"sshit"))
 async def kakashi(shit):
     await shit.edit(G)
-    
+
 @bot.on(dev_cmd(pattern=r"sxx"))
 async def kakashi(saxy):
     await saxy.edit(H)
-    
+
 @bot.on(dev_cmd(pattern=r"sporn"))
 async def kakashi(pornhub):
     await pornhub.edit(I)
