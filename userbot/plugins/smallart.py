@@ -109,7 +109,7 @@ I = ("⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿\n"
 
 @bot.on(dev_cmd(pattern=r"sthink"))
 async def kakashi(think):
-    await think.edit(F)
+    await think.edit(A)
     A = (f"**  ➥ {name} .\n\n**"
         "⠀⠀⠀⠀⢀⣀⣀⣀\n"
         "⠀⠀⠀⠰⡿⠿⠛⠛⠻⠿⣷\n"
@@ -131,7 +131,7 @@ async def kakashi(think):
 
 @bot.on(dev_cmd(pattern=r"sdick"))
 async def kakashi(dicksay):
-    await dicksay.edit(F)
+    await dicksay.edit(B)
     B = (f"**  ➥ {name} .\n**"
         "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀\n"
         "⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⡤⠖⠲⢄\n"
@@ -155,7 +155,7 @@ async def kakashi(dicksay):
 
 @bot.on(dev_cmd(pattern=r"sfrog"))
 async def kakashi(frogsay):
-    await frogsay.edit(F)
+    await frogsay.edit(C)
     C = (f"**  ➥ {name} .\n\n**"
         "⠄⠄⠄⠄⠄⣀⣀⣤⣶⣿⣿⣶⣶⣶⣤⣄⣠⣴⣶⣿⣶⣦⣄⠄\n"
         "⠄⣠⣴⣾⣿⠿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦\n"
@@ -177,7 +177,7 @@ async def kakashi(frogsay):
 
 @bot.on(dev_cmd(pattern=r"sputin"))
 async def kakashi(putinsay):
-    await putinsay.edit(F)
+    await putinsay.edit(D)
     D = (f"**Vladimir Putin ➥ {name} .\n\n**"
         "⣿⣿⣿⣿⣻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿\n"
         "⣿⣿⣿⣵⣿⣿⣿⠿⡟⣛⣧⣿⣯⣿⣝⡻⢿⣿⣿⣿⣿⣿⣿⣿\n"
@@ -201,7 +201,7 @@ async def kakashi(putinsay):
 
 @bot.on(dev_cmd(pattern=r"sdead"))
 async def kakashi(deadfrog):
-    await deadfrog.edit(F)
+    await deadfrog.edit(E)
     E = (f"**Froggy ➥ {name} .\n\n**"
         "⣿⣿⣿⡇⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿\n"
         "⣿⣿⣿⡇⠄⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿\n"
@@ -223,7 +223,7 @@ async def kakashi(deadfrog):
 
 @bot.on(dev_cmd(pattern=r"strump"))
 async def kakashi(trumpsay):
-    await trumpsay.edit(F)
+    await trumpsay.edit(J)
     J = (f"**Donald Trump ➥ {name} .\n\n**"
         "⣿⣿⣿⣿⣿⣿⡿⠿⠛⠋⠉⡉⣉⡛⣛⠿⣿⣿⣿⣿⣿⣿⣿⣿\n"
         "⣿⣿⣿⡿⠋⠁⠄⠄⠄⠄⠄⢀⣸⣿⣿⡿⠿⡯⢙⠿⣿⣿⣿⣿\n"
@@ -245,7 +245,7 @@ async def kakashi(trumpsay):
 
 @bot.on(dev_cmd(pattern=r"schina"))
 async def kakashi(ckmkb):
-    await ckmkb.edit(F)
+    await ckmkb.edit(K)
     K = (f"**🅲🅺🅼🅺🅱 ➥ {name} .\n\n**"
         "⣿⣿⣿⣿⠟⠋⢁⢁⢁⢁⢁⢁⢁⢁⠈⢻⢿⣿⣿⣿⣿⣿⣿⣿\n"
         "⣿⣿⣿⣿⠃⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠈⡀⠭⢿⣿⣿⣿⣿\n"
