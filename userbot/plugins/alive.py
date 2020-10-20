@@ -28,5 +28,5 @@ async def amireallyalive(alive):
                      f"**> Python:** {versions.__python_version__}\n"
                      f"**> Firmware:** {versions.__version__}\n"
                      f"**> 👤 USER**: {DEFAULTUSER}\n\n"
-                      f"**Help >se non funziona qualcosa guarda @atteso**\n\n"
+                      f"**Help > Son cazzi vostri!**\n\n"
                      "▬▬▬▬▬▬▬▬ ❴✪❵ ▬▬▬▬▬▬▬▬")
