@@ -24,5 +24,5 @@ async def install(event):
     o = stdout.decode()
     _o = o.split("\n")
     o = "\n".join(_o)
-    OUTPUT = f"**ℹ️ LISTA PLUG-IN 🔍**\n\n{o}\n\n**ℹ️ SUGGERIMENTO:**\nSe hai problemi con i plugin\n@atteso ~"
+    OUTPUT = f"**ℹ️ LISTA PLUG-IN 🔍**\n\n{o}\n\n**ℹ️ SUGGERIMENTO:**\nUltimo aggiornamento 20 settembre. ~"
     await event.edit(OUTPUT)
