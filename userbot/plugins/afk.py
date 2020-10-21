@@ -156,8 +156,8 @@ async def on_afk(event):
             else:
                 afk_since = f"`{int(seconds)}s` **ago**"
         msg = None
-        message_to_reply = f"**Sono AFK da**  `{total_afk_time}`\n**Non scrivere altri messaggi.**" + \
-            f"\n\n**Quando torno rispondo.**\n** Motivo AFK: **: {reason}" \
+        message_to_reply = f"**Sono AFK da** ` {total_afk_time}`\n**Non scrivere altri messaggi.**" + \
+            f"\n\n**Quando torno rispondo.**\n** Motivo AFK:**: {reason}" \
             if reason \
             else f"**Al momento non sto usando Tg**\n\n**Appena torno risponderò al tuo messaggio(se ho voglia)**"
         msg = await event.reply(message_to_reply)
