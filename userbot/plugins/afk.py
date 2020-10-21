@@ -55,7 +55,8 @@ async def _(event):
             afk_time = datetime.datetime.now()  # pylint:disable=E0602
         USER_AFK = f"yes: {reason}"  # pylint:disable=E0602
         if reason:
-            await bot.send_message(event.chat_id, f"**Vado AFK😴** __MOTIVO ~ {reason}__")
+            await bot.send_message(event.chat_id, f"**AFK(ON) con successo!**\n"
+                                   f"**Motivo: {reason}**")
         else:
             await bot.send_message(event.chat_id, f"**AFK(ON) con successo!**")
         await asyncio.sleep(5)
@@ -82,7 +83,7 @@ async def set_not_afk(event):
         total_afk_time = str((afk_end - afk_start))
     current_message = event.message.message
     if ".afk" not in current_message and "yes" in USER_AFK:  # pylint:disable=E0602
-        shite = await bot.send_message(event.chat_id, "__AFK terminato!__\n**Sono tornato online.**\nDurata AFK:`" + total_afk_time + "`")
+        shite = await bot.send_message(event.chat_id, "**AFK(Off) con successo!**\n**Sono tornato online.**\nDurata AFK: `" + total_afk_time + "`")
         try:
             await bot.send_message(  # pylint:disable=E0602
                 Var.PRIVATE_GROUP_ID,  # pylint:disable=E0602
@@ -155,10 +156,10 @@ async def on_afk(event):
             else:
                 afk_since = f"`{int(seconds)}s` **ago**"
         msg = None
-        message_to_reply = f"**Sono AFK** `{total_afk_time}`\n**Non scrivere altri messaggi.**" + \
-            f"\n\n**Quando torno rispondo.**\n**motivo afk: **: {reason}" \
+        message_to_reply = f"**Sono AFK da**  `{total_afk_time}`\n**Non scrivere altri messaggi.**" + \
+            f"\n\n**Quando torno rispondo.**\n** Motivo AFK: **: {reason}" \
             if reason \
-            else f"**Al momento non sto usando tg.**\n\n**Appena torno risponderò al tuo messaggio**"
+            else f"**Al momento non sto usando Tg**\n\n**Appena torno risponderò al tuo messaggio(se ho voglia)**"
         msg = await event.reply(message_to_reply)
         await asyncio.sleep(5)
         if event.chat_id in last_afk_message:  # pylint:disable=E0602
