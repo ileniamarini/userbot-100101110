@@ -278,7 +278,6 @@ GRUPPI IN COMUNE📶: {}
         silent=True
     )
     await event.delete()
-    await sleep(1)
     await send_message.delete()
 
 
