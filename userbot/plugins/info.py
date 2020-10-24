@@ -278,7 +278,6 @@ GRUPPI IN COMUNE📶: {}
         silent=True
     )
     await event.delete()
-    await send_message.delete()
 
 
 async def get_full_user(event):
