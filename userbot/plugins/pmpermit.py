@@ -1,14 +1,3 @@
-# Copyright © 2020 di 100101110 Github, <https://github.com/100101110>.
-#
-# Questo file fa parte del progetto <https://github.com/100101110/userbot-100101110>,
-# e viene rilasciato in base alla "Licenza GNU Affero General Public v3.0".
-# Si prega di consultare <https://github.com/100101110/userbot-100101110/blob/master/LICENSE>
-#
-# Tutti i diritti riservati.
-# 
-# Crediti: @100101110
-#
-  
 import asyncio
 import io
 
@@ -24,10 +13,10 @@ PREV_REPLY_MESSAGE = {}
 CACHE = {}
 
 DEFAULTUSER = str(ALIVE_NAME) if ALIVE_NAME else "100101110"
-USER_BOT_WARN_ZERO = "**Stai spammando troppo, sei bloccato dal bot sono impegnato 👎**"
-USER_BOT_NO_WARN = ("[╚ »✪« ╝ SYSTEM BOT ╚ »✪« ╝](tg://user?id=1133198248)\n\n"
+USER_BOT_WARN_ZERO = "**Bloccato dal bot per spam.**"
+USER_BOT_NO_WARN = ("[╚ »✪« ╝ SYSTEM BOT ╚ »✪« ╝](tg://user?id=315364973)\n\n"
                     "**Specifica il motivo**\n**perchè cerchi** "f"{DEFAULTUSER}\n\n"
-                    "**AIuta il mio capo,**\n**a capire perchè sei qui.**\n**Premi `/start` e scegli**\n**il motivo della chat.**\n\n"
+                    "**Rispondo,**\n**appena posso**\n**Premi `/start` e scegli**\n**il motivo della chat.**\n\n"
                     "▬▬▬ ✪ ▬▬ ◆ ▬▬ ✪ ▬▬▬")
 # ============================================
 
@@ -79,7 +68,7 @@ if Var.PRIVATE_GROUP_ID is not None:
         if event.is_private:
             if pmpermit_sql.is_approved(chat.id):
                 pmpermit_sql.disapprove(chat.id)
-                await event.edit("**Sei stato bloccato, non puoi inviarmi messaggi**[{}](tg://user?id={})".format(firstname, chat.id))
+                await event.edit("**Sei appena stato bloccato, addio!**[{}](tg://user?id={})".format(firstname, chat.id))
                 await asyncio.sleep(3)
                 await event.client(functions.contacts.BlockRequest(chat.id))
 
